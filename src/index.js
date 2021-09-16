@@ -92,11 +92,11 @@ async function converterCallback(incomingText) {
       return;
   }
 
-  writeWhisper("Conversion:", `${value}${unit} converts to ${resVal}${resUnit}`)
+  writeWhisper("Converter-Loop:", `${value}${unit} converts to ${resVal}${resUnit}`)
 }
 
 async function converterWhisper() {
-  writeWhisper("Startup:", "Starting Clipboard listener")
+  writeWhisper("Converter-Loop:", "Starting Converter-Loop")
   clipboard.listen(true, converterCallback);
 }
 
